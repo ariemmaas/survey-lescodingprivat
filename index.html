@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+<h1>Survey Les Coding Privat</h1>
+<p>Mengadakan les privat coding untuk SD, SMP & SMA/SMK</p>
+
+<form id="survey-form" action="" method="POST">
+  <div>
+    <label for="name" id="name-label">Name :</label><br>
+<input class="input-elm" type="text" name="name" id="name" 
+required placeholder="Nama lengkap anda">
+  </div>
+  
+  <div>
+    <label for="email" id="email-label">Email :</label><br>
+<input class="input-elm" type="email" name="email" id="email" 
+required placeholder="Alamat email anda">
+  </div>
+  
+  <div>
+    <label for="number" id="number-label">Umur :</label><br>
+<input class="input-elm" type="number" name="age" id="number" 
+max="55" min="7" required placeholder="Umur">
+  </div>
+  
+  <div>
+    <label for="dropdown">Kelas anda: </label><br>
+    <select class="select-elm" name="grade" id="dropdown">
+      <option value="SD kelas 1">SD kelas 1</option>
+      <option value="SD kelas 2">SD kelas 2</option>
+      <option value="SD kelas 3">SD kelas 3</option>
+      <option value="SD kelas 4">SD kelas 4</option>
+      <option value="SD kelas 5">SD kelas 5</option>
+      <option value="SD kelas 6">SD kelas 6</option>
+      <option value="SMP kelas 1">SMP kelas 1</option>
+      <option value="SMP kelas 2">SMP kelas 2</option>
+      <option value="SMP kelas 3">SMP kelas 3</option>
+      <option value="SMA kelas 1">SMA kelas 1</option>
+      <option value="SMA kelas 2">SMA kelas 2</option>
+      <option value="SMA kelas 3">SMA kelas 3</option>
+      <option value="SMK kelas 1">SMK kelas 1</option>
+      <option value="SMK kelas 2">SMK kelas 2</option>
+      <option value="SMK kelas 3">SMK kelas 3</option>
+    </select>
+  </div>
+  
+  <div>
+    <label>Pilihan tipe coding:</label>
+    <ul>
+      <li class="list-items">
+        <input class="input-elm input-radio" type="radio" 
+        name="based" value="1" id="radio-1"><label for="radio-1">Block-based coding</label>
+      </li>
+      <li class="list-items">
+        <input class="input-elm input-radio" type="radio" 
+        name="based" value="2" id="radio-2"><label for="radio-2">Text-based coding</label>
+      </li>
+    </ul>
+  </div>
+  
+  <div>
+    <label>Materi kursus yang diinginkan:</label>
+    <ul>
+      <li class="list-items">
+        <input class="input-elm input-checkbox" type="checkbox" 
+        value="Scratch (Block-based)" id="checkbox-1"><label for="checkbox-1">Scratch (Block-based)</label>
+      </li>
+      <li class="list-items">
+        <input class="input-elm input-checkbox" type="checkbox" 
+        value="Code.org (Block-based)" id="checkbox-2"><label for="checkbox-2">Code.org (Block-based)</label>
+      </li>
+      <li class="list-items">
+        <input class="input-elm input-checkbox" type="checkbox" 
+        value="HTML/CSS (Text-based)" id="checkbox-3"><label for="checkbox-3">HTML/CSS (Text-based)</label>
+      </li>
+      <li class="list-items">
+        <input class="input-elm input-checkbox" type="checkbox" 
+        value="JavaScript (Text-based)" id="checkbox-4"><label for="checkbox-4">JavaScript (Text-based)</label>
+      </li>
+      <li class="list-items">
+        <input class="input-elm input-checkbox" type="checkbox" 
+        value="Python (Text-based)" id="checkbox-5"><label for="checkbox-5">Python (Text-based)</label>
+      </li>
+      <li class="list-items">
+        <input class="input-elm input-checkbox" type="checkbox" 
+        value="PHP/MySQL (Text-based)" id="checkbox-6"><label for="checkbox-6">PHP/MySQL (Text-based)</label>
+      </li>
+    </ul>
+  </div>
+  
+  <div>
+    <label for="more-specification">Informasi tambahan:</label><br>
+    <textarea class="textarea-elm" id="more-specification"></textarea>
+  </div>
+  
+  <div>
+    <button class="button-elm" type="submit" id="submit">Submit Form</button>
+  </div>
+</form>
+</body>
+
+</html>
